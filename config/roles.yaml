@@ -4,11 +4,11 @@ roles:
     private_networks:
       - {auto_network: true}
     forwarded_ports:
-      - {guest: 443, host: 8443, auto_correct: true}
+      - {guest: 443, host: 4001, auto_correct: true}
     provider:
       type: virtualbox
       customize:
-        - [modifyvm, !ruby/sym id, '--memory', 1024]
+        - [modifyvm, !ruby/sym id, '--memory', 2048]
     provisioners:
       - type: shell
         inline: "chkconfig iptables off;service iptables stop"
