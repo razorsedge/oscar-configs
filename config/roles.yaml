@@ -4,7 +4,7 @@ roles:
     private_networks:
       - {auto_network: true}
     forwarded_ports:
-      - {guest: 443, host: 10332, auto_correct: true}
+      - {guest: 443, host: 10371, auto_correct: true}
     provider:
       type: virtualbox
       customize:
